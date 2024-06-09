@@ -1,0 +1,83 @@
+@echo off
+chcp 65001 >nul
+title C H A N G E M E !
+color b
+:start
+echo C H A N G E M E !
+ping localhost -n 2 >nul
+cls
+echo LOADING.
+ping localhost -n 2 >nul
+cls
+echo LOADING..
+ping localhost -n 2 >nul
+cls
+echo LOADING...
+ping localhost -n 2 >nul
+cls
+echo LOADING.
+ping localhost -n 2 >nul
+cls
+echo LOADED
+ping localhost -n 2 >nul
+cls
+:what
+echo something 1 = 1
+echo something 2 = 2
+echo exit = e
+set /p what=Put your version here: 
+if %what% == 1 goto key
+if %what% == 2 goto key
+if %what% == e goto exit
+echo not a choice buddy
+timeout 5 >nul
+:key
+echo Something here
+set /p key=Put your key here: 
+if %key% == put-a-user/pass-here goto loading
+echo nuh uh
+timeout 5 >nul
+goto start
+:loading
+echo change me to be something valid
+ping localhost -n 2 >nul
+cls
+echo YAY.
+ping localhost -n 3 >nul
+cls
+echo exeisont..
+ping localhost -n 3 >nul
+cls
+echo hi!...
+ping localhost -n 3 >nul
+cls
+echo yay.
+ping localhost -n 3 >nul
+cls
+echo change me!..
+ping localhost -n 3 >nul
+cls
+echo haha...
+ping localhost -n 3 >nul
+cls
+color 7
+title What Ever you want in here
+echo sum here
+echo OPEN GAME ONCE CMD IS CLOSED (or sum)
+color a
+echo menu will close in 5
+ping localhost -n 2 >nul
+echo menu will close in 4
+ping localhost -n 2 >nul
+echo menu will close in 3
+ping localhost -n 2 >nul
+echo menu will close in 2
+ping localhost -n 2 >nul
+echo menu will close in 1
+ping localhost -n 3 >nul
+close >nul
+:exit
+exit
+
+
+

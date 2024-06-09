@@ -1,0 +1,92 @@
+Hi if your new to batch or dont know what commands do what read this.
+also thanks for watching my video and supporting my channel.
+if you dont mind a like and sub would help alot and I will continue making code like this and more!
+
+ALSO READ THE readme.md
+
+Under Here its going to be the code than -- to explain what they do! than underneath its going to be an example
+
+echo -- this is what your going to use to type stuff out in the cmd terminal or whatevr you want to call it. it should look sum like this
+
+echo Hello World
+
+@echo off -- this is what you are going to use to make it cleaner with it off it would look like this
+
+without command
+
+C:\users\username>Hello World
+
+with command
+
+Hello World
+
+color -- this is used to change colors for text i will provide a table underneath this
+
+    0 = Black       8 = Gray
+    1 = Blue        9 = Light Blue
+    2 = Green       A = Light Green
+    3 = Aqua        B = Light Aqua
+    4 = Red         C = Light Red
+    5 = Purple      D = Light Purple
+    6 = Yellow      E = Light Yellow
+    7 = White       F = Bright White
+
+using these the command should look something like this
+
+color 5 -- for a purple text
+
+if you want a colored text and backgeound it should look something like this
+
+color 5d
+
+title -- its in the command
+
+title hello -- on the top of the cmd / terminal it should say hello instead of cmd or whatevr
+
+cls -- clears all the text but keeps the title color etc
+
+cls
+
+ping localhost -n (any number) >nul this is what is used to make an animation it would pause the code for how many seconds than will go back to it not being paused
+
+echo LOADING.
+ping localhost -n 2 >nul
+cls
+echo LOADING..
+ping localhost -n 2 >nul
+cls
+
+>nul -- this is used to make things not popup like if you wanted to use pause (i will give a quick explonation under here even tho its not in the code) it would not popup with the "the text is closed"
+
+pause >nul
+
+pause -- used to pause the whole code
+
+pause
+:something -- this is a section and can be used to move to differant sections or a command
+
+:start
+
+goto -- this is used for the sections and you can code it so it can go back to start or another section of your chosing
+
+goto start
+
+if %something% == password-or-username goto start -- this is a username or password section where you can make it so you lock the code or have multiple options like exit and stuff
+
+if %something% == password-or-username goto exit
+
+close/exit -- closes the cmd/terminal
+
+exit
+close
+
+chcp 65001 >nul -- kinda forgot what it is used for but it is really usefull to have it in your code. (edit.. from what i remember it is used if you want text art or stuff in your code. but keep it even if you dont)
+
+chcp 65001 >nul
+
+set /p something=Put a key or pass word or whatever here: -- MAKE SURE THERE IS A SPACE AFTER THE COLIN. This is used for people to write a password or username before the if cmd.
+
+set /p key=Put something here: 
+if %key% == put-a-user/pass-here goto start
+
+That is all used in this code but if you still need help i suggest watching this guy + he was the person who taught me how to code https://www.youtube.com/watch?v=-_NleTGYE24&list=PL35B3EFC3D6CD1DF7
